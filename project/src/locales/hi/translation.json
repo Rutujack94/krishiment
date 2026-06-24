@@ -1,0 +1,368 @@
+{
+   "Krishiment": "कृषिमेंट",
+    "Home": "मुखपृष्ठ",
+    "Features": "विशेषताएँ",
+    "About": "हमारे बारे में",
+    "Contact": "संपर्क करें",
+    "Login/Signup": "लॉगिन / साइनअप",
+
+
+     "hero": {
+    "title": "स्मार्ट कृषि",
+    "subtitle": "प्लेटफ़ॉर्म",
+    "description": "किसानों और कृषि मजदूरों को तकनीक के माध्यम से जोड़ने वाला प्लेटफ़ॉर्म। सरकारी योजनाएं, रियल-टाइम बाजार मूल्य और उपकरण मार्केटप्लेस एक ही जगह पर।",
+    "getStarted": "शुरू करें",
+    "learnMore": "और जानें"
+  },
+  "stats": {
+    "farmers": "सक्रिय किसान",
+    "workers": "कृषि मजदूर",
+    "equipment": "सूचीबद्ध उपकरण",
+    "success": "सफलता दर"
+  },
+  "featuresSection": {
+    "title": "हमारा प्लेटफ़ॉर्म क्यों चुनें?",
+    "subtitle": "हम अत्याधुनिक तकनीक के साथ आधुनिक कृषि के लिए व्यापक समाधान प्रदान करते हैं।"
+  },
+  "features": {
+    "connectTitle": "किसानों और मजदूरों को जोड़ें",
+    "connectDesc": "हमारे स्मार्ट मैचिंग सिस्टम के माध्यम से किसानों और कृषि मजदूरों के बीच की दूरी कम करें।",
+    "marketTitle": "रियल-टाइम बाजार मूल्य",
+    "marketDesc": "फसलों, अनाज और सब्जियों के लाइव बाजार मूल्य से अपडेट रहें।",
+    "schemesTitle": "सरकारी योजनाएँ",
+    "schemesDesc": "कृषि से संबंधित सरकारी योजनाओं और सब्सिडियों की जानकारी प्राप्त करें।",
+    "equipmentTitle": "उपकरण मार्केटप्लेस",
+    "equipmentDesc": "कृषि उपकरणों को आसानी और पारदर्शिता के साथ खरीदें और बेचें।"
+  },
+  "about": {
+    "title": "तकनीक के माध्यम से कृषि को सशक्त बनाना",
+    "description": "हमारा प्लेटफ़ॉर्म पारंपरिक खेती और आधुनिक तकनीक के बीच की खाई को पाटता है।",
+    "point1": "हजारों किसानों का विश्वास",
+    "point2": "सुरक्षित और विश्वसनीय प्लेटफ़ॉर्म",
+    "point3": "२४x७ ग्राहक सहायता",
+    "farmerTitle": "किसानों के लिए",
+    "farmerDesc": "संचालन प्रबंधित करें, मजदूर ढूंढें, योजनाओं तक पहुँचें",
+    "workerTitle": "मजदूरों के लिए",
+    "workerDesc": "नौकरियां खोजें, प्रतिष्ठा बनाएं, करियर बढ़ाएं"
+  },
+  "cta": {
+    "title": "क्या आप अपने कृषि सफर को बदलने के लिए तैयार हैं?",
+    "subtitle": "हजारों किसान और मजदूर पहले से ही हमारे प्लेटफ़ॉर्म से लाभ उठा रहे हैं।",
+    "button": "अपनी यात्रा शुरू करें"
+  },
+  "footer": {
+    "title": "स्मार्ट कृषि",
+    "desc": "नवीन तकनीकी समाधान के माध्यम से किसानों और मजदूरों को जोड़ने वाला मंच।",
+    "platformTitle": "प्लेटफ़ॉर्म",
+    "platform1": "किसानों के लिए",
+    "platform2": "मजदूरों के लिए",
+    "platform3": "उपकरण मार्केटप्लेस",
+    "platform4": "सरकारी योजनाएँ",
+    "supportTitle": "सहायता",
+    "support1": "मदद केंद्र",
+    "support2": "संपर्क करें",
+    "support3": "गोपनीयता नीति",
+    "support4": "सेवा की शर्तें",
+    "contactTitle": "संपर्क",
+    "address1": "१२३ एग्रीकल्चर हब",
+    "address2": "ग्रीन वैली, भारत",
+    "copyright": "© २०२५ स्मार्ट कृषि प्लेटफ़ॉर्म. सर्वाधिकार सुरक्षित."
+  },
+
+
+
+   "Create your account": "अपना खाता बनाएं",
+  "Already have an account?": "क्या आपका पहले से खाता है?",
+  "Sign in": "साइन इन करें",
+  "Username": "उपयोगकर्ता नाम",
+  "Email address": "ईमेल पता",
+  "Full Name": "पूरा नाम",
+  "Phone Number": "फोन नंबर",
+  "Password": "पासवर्ड",
+  "Confirm Password": "पासवर्ड की पुष्टि करें",
+  "Password Requirements:": "पासवर्ड आवश्यकताएँ:",
+  "At least 8 characters": "कम से कम 8 अक्षर",
+  "At least one uppercase letter": "कम से कम एक बड़ा अक्षर",
+  "At least one number": "कम से कम एक संख्या",
+  "At least one special character": "कम से कम एक विशेष अक्षर",
+  "Passwords match": "पासवर्ड मेल खाते हैं",
+  "I am a:": "मैं हूँ:",
+  "Farmer": "किसान",
+  "Looking to hire workers and manage your farm": "कामगारों को नौकरी पर रखने और अपने खेत का प्रबंधन करने की इच्छा",
+  "Agricultural Worker": "कृषि कामगार",
+  "Looking for farming jobs and opportunities": "कृषि नौकरियाँ और अवसर ढूंढ रहा है",
+  "I agree to the": "मैं सहमत हूँ",
+  "Terms of Service": "सेवा की शर्तें",
+  "and": "और",
+  "Privacy Policy": "गोपनीयता नीति",
+  "Creating Account...": "खाता बना रहे हैं...",
+  "Sign in to your account": "अपने खाते में साइन इन करें",
+  "Username is required": "उपयोगकर्ता नाम आवश्यक है",
+  "Username must be at least 3 characters": "उपयोगकर्ता नाम कम से कम 3 अक्षर होना चाहिए",
+  "Email is required": "ईमेल आवश्यक है",
+  "Please enter a valid email address": "कृपया वैध ईमेल पता डालें",
+  "Full name is required": "पूरा नाम आवश्यक है",
+  "Phone number is required": "फोन नंबर आवश्यक है",
+  "Please enter a valid phone number": "कृपया वैध फोन नंबर डालें",
+  "Password is required": "पासवर्ड आवश्यक है",
+  "Password must be at least 8 characters": "पासवर्ड कम से कम 8 अक्षर होना चाहिए",
+  "Please confirm your password": "कृपया अपना पासवर्ड पुष्टि करें",
+  "Passwords do not match": "पासवर्ड मेल नहीं खाते",
+  "An error occurred during registration. Please try again.": "पंजीकरण के दौरान त्रुटि हुई। कृपया फिर से प्रयास करें।",
+
+
+
+
+  "Or": "या",
+  "create a new account": "नया खाता बनाएं",
+
+  "Enter your username": "अपना उपयोगकर्ता नाम दर्ज करें",
+
+  "Enter your password": "अपना पासवर्ड दर्ज करें",
+  "Forgot your password?": "क्या आप अपना पासवर्ड भूल गए?",
+  "Don't have an account? Sign up": "खाता नहीं है? साइन अप करें",
+  "Signing in...": "साइन इन हो रहा है...",
+
+  "Please enter both username and password": "कृपया उपयोगकर्ता नाम और पासवर्ड दोनों दर्ज करें",
+  "Login successful but user data is missing. Please try again.": "साइन इन सफल हुआ लेकिन उपयोगकर्ता डेटा गायब है। कृपया पुनः प्रयास करें।",
+  "An error occurred during login. Please try again.": "साइन इन के दौरान त्रुटि हुई। कृपया पुनः प्रयास करें।",
+
+
+  "Welcome back": " स्वागत है",
+  "Manage your farm operations and connect with the agricultural community.": "अपने खेत के संचालन को प्रबंधित करें और कृषि समुदाय से जुड़ें।",
+  "Quick Stats": "त्वरित आँकड़े",
+  "Active Jobs": "सक्रिय नौकरियां",
+  "Applications": "आवेदन",
+  "Equipment Listed": "सूचीबद्ध उपकरण",
+  "Leads (Buyer Inquiries)": "लीड्स (खरीदार पूछताछ)",
+  "Loading...": "लोड हो रहा है...",
+  "No inquiries yet.": "अभी कोई पूछताछ नहीं है।",
+  "Date": "तारीख",
+  "Equipment": "उपकरण",
+  "Buyer": "खरीदार",
+  "Email": "ई-मेल",
+  "Phone": "फोन",
+  "Message": "संदेश",
+
+  "Admin Panel": "एडमिन पैनल",
+  "Dashboard": "डैशबोर्ड",
+  "Government Schemes": "सरकारी योजनाएं",
+  "Equipment Marketplace": "उपकरण मार्केटप्लेस",
+  "Buy Equipment": "उपकरण खरीदें",
+  "Sell Equipment": "उपकरण बेचें",
+  "Worker Management": "कर्मी प्रबंधन",
+  "Post Jobs": "नौकरियाँ पोस्ट करें",
+  "Market Prices": "बाजार कीमतें",
+  "Notifications": "सूचनाएं",
+  "History": "इतिहास",
+  "Logout": "लॉग आउट",
+  "Leads": "लीड्स",
+
+ "government_schemes_title": "सरकारी योजनाएँ",
+  "government_schemes_desc": "उपलब्ध सरकारी कृषि योजनाएँ और अनुदान देखें",
+  
+  "equipment_buy_title": "खरीदने के लिए उपकरण",
+  "equipment_buy_desc": "कृषि उपकरण ब्राउज़ करें और खरीदें",
+  
+  "equipment_sell_title": "बेचने के लिए उपकरण",
+  "equipment_sell_desc": "अपने उपकरणों को बिक्री के लिए सूचीबद्ध करें",
+  
+  "worker_applications_title": "कर्मचारी आवेदन",
+  "worker_applications_desc": "कृषि कर्मचारियों से आए आवेदन देखें",
+  
+  "upload_jobs_title": "नौकरियाँ अपलोड करें",
+  "upload_jobs_desc": "कृषि कर्मचारियों के लिए नौकरी के अवसर पोस्ट करें",
+  
+  "real_time_prices_title": "रीयल-टाइम कीमतें",
+  "real_time_prices_desc": "फसलों और अनाज की वर्तमान बाजार कीमत देखें",
+  
+  "notifications_title": "सूचनाएँ",
+  "notifications_desc": "महत्वपूर्ण अपडेट और अलर्ट देखें",
+  
+  "history_title": "इतिहास",
+  "history_desc": "अपने लेनदेन और गतिविधियों का इतिहास देखें",
+  
+  "find_jobs_title": "नौकरियाँ खोजें",
+  "find_jobs_desc": "उपलब्ध कृषि नौकरियों के लिए ब्राउज़ करें और आवेदन करें",
+  "Find Jobs": "नौकरियाँ खोजें",
+  
+  "my_applications_title": "मेरे आवेदन",
+  "my_applications_desc": "अपने नौकरी आवेदन की स्थिति देखें",
+  
+  "skills_title": "मेरे कौशल",
+  "skills_desc": "अपने कृषि कौशल और प्रमाणपत्र प्रबंधित करें",
+  
+  "earnings_title": "मेरी कमाई",
+  "earnings_desc": "अपने नौकरी की कमाई और भुगतान ट्रैक करें",
+  "Your Activity": "आपकी गतिविधि",
+  "Applications Sent": "भेजे गए आवेदन",
+  "Jobs Completed": "पूर्ण किए गए कार्य",
+  "Rating": "रेटिंग",
+  
+  "Find job opportunities and grow your agricultural career.": "नौकरी के अवसर खोजें और अपने कृषि करियर को आगे बढ़ाएं।",
+
+ "Search schemes, services, or resources...": "योजनाएँ, सेवाएँ या संसाधन खोजें...",
+  "Search government schemes and services": "सरकारी योजनाएँ और सेवाएँ खोजें",
+  "Search schemes...": "योजनाएँ खोजें...",
+  "Search government schemes": "सरकारी योजनाएँ खोजें",
+  "Citizen Login": "नागरिक लॉगिन",
+  "Admin Login": "प्रशासक लॉगिन",
+  "Services": "सेवाएँ",
+  "Gov Schemes": "सरकारी योजनाएँ",
+  "Resources": "संसाधन",
+  "Support": "सहायता",
+  "Toggle menu": "मेनू बदलें",
+
+
+
+  
+  "sell_equipment": "खेती के उपकरण बेचें",
+  "fill_details": "अपने खेती के उपकरणों के विवरण भरें ताकि उन्हें बिक्री के लिए सूचीबद्ध किया जा सके",
+  "equipment_photos": "उपकरणों के फोटो",
+  "add_photo": "फोटो जोड़ें",
+  "main_display_note": "पहली फोटो मुख्य रूप में दिखाई जाएगी। अधिकतम 8 फोटो जोड़ें।",
+  "equipment_title": "उपकरण का शीर्षक*",
+  "equipment_title_hint": "ब्रांड, मॉडल और वर्ष जैसे प्रमुख विवरण शामिल करें",
+  "price": "कीमत (₹)*",
+  "category": "श्रेणी*",
+  "condition": "स्थिति*",
+  "location": "स्थान*",
+  "description": "विवरण*",
+  "description_hint": "उपकरण के बारे में विवरण दें, जैसे विनिर्देश, उपयोग के घंटे, रखरखाव इतिहास और अन्य",
+  "cancel": "रद्द करें",
+  "publish_listing": "लिस्टिंग प्रकाशित करें",
+  "publishing": "प्रकाशित हो रहा है...",
+  "success_message": "आपका उपकरण सफलतापूर्वक सूचीबद्ध हो गया है!",
+  "login_required": "कृपया लिस्टिंग बनाने के लिए लॉगिन करें।",
+
+ 
+  "sell_your_equipment": "अपना कृषि उपकरण बेचें",
+
+
+
+  "marketPrices": {
+    "title": "रियल-टाइम बीज मूल्य",
+    "autoUpdate": "हर ~8 सेकंड में स्वचालित अद्यतन",
+    "searchPlaceholder": "बाज़ार खोजें...",
+    "allCrops": "सभी फसलें",
+    "allStates": "सभी राज्य",
+    "allVarieties": "सभी किस्में",
+    "crop": "फसल",
+    "variety": "किस्म",
+    "state": "राज्य",
+    "market": "बाज़ार",
+    
+    "change": "परिवर्तन",
+    "updated": "अद्यतन"
+  },
+
+
+  "notifications": {
+    "title": "सूचनाएँ",
+    "mark_all": "सभी को पढ़ा हुआ चिन्हित करें",
+    "loading": "लोड हो रहा है...",
+    "new": "नया",
+    "buyer": "खरीदार",
+    "email": "ईमेल",
+    "phone": "फ़ोन",
+    "equipment": "उपकरण",
+    "empty": "अभी तक कोई सूचना नहीं है।",
+    "load_error": "सूचनाएँ लोड करने में विफल",
+    "mark_error": "पढ़ा हुआ चिन्हित करने में विफल"
+  },
+
+
+
+  "farmEquipmentMarketplace": "कृषि उपकरण मार्केटप्लेस",
+  "findQualityEquipment": "उच्च गुणवत्ता वाले कृषि उपकरण और सामग्री खोजें",
+  "listEquipment": "उपकरण सूचीबद्ध करें",
+  "compare": "तुलना करें",
+  "search": "खोजें",
+  "searchPlaceholder": "उपकरण खोजें...",
+ 
+  "allCategories": "सभी श्रेणियाँ",
+  "priceRange": "मूल्य सीमा",
+  "noEquipmentFound": "कोई उपकरण नहीं मिला",
+  "tryAdjusting": "अपने खोज या फ़िल्टर को समायोजित करके देखें",
+  "listNewEquipment": "नया उपकरण सूचीबद्ध करें",
+  "title": "शीर्षक",
+ 
+  "equipmentImage": "उपकरण की छवि",
+  "chooseFile": "फ़ाइल चुनें",
+  "noFileChosen": "कोई फ़ाइल नहीं चुनी गई",
+ 
+  "listEquipmentButton": "उपकरण सूचीबद्ध करें",
+  "new": "नया",
+  "usedLikeNew": "उपयोग किया हुआ - नया जैसा",
+  "usedGood": "उपयोग किया हुआ - अच्छा",
+  "usedFair": "उपयोग किया हुआ - ठीक",
+  "failedToLoad": "उपकरण लिस्टिंग लोड करने में विफल। कृपया बाद में पुनः प्रयास करें।",
+  "pleaseLogin": "कृपया लॉगिन करें",
+  "failedToCreate": "सूची बनाने में विफल। कृपया पुनः प्रयास करें।",
+  "addedToComparison": "उपकरण तुलना सूची में जोड़ा गया!",
+  "alreadyInComparison": "यह उपकरण पहले से ही आपकी तुलना सूची में है!",
+  "maxComparison": "एक समय में अधिकतम 4 आइटम की तुलना कर सकते हैं!",
+
+
+
+  
+  "Upload Job": "नौकरी अपलोड करें",
+  "Job Title": "नौकरी का शीर्षक",
+  "Category": "श्रेणी",
+  "Description": "विवरण",
+  "Wage per Day": "प्रति दिन वेतन",
+  "Duration": "अवधि",
+  "Workers Needed": "आवश्यक श्रमिक",
+  "Start Date": "प्रारंभ तिथि",
+  "End Date": "समाप्ति तिथि",
+  "Job Location": "नौकरी का स्थान",
+  "Use Current Location": "वर्तमान स्थान का उपयोग करें",
+  "Getting Location...": "स्थान प्राप्त किया जा रहा है...",
+  "Address": "पता",
+  "Latitude": "अक्षांश",
+  "Longitude": "देशांतर",
+  "Labour Availability": "श्रमिक उपलब्धता",
+  "Check Availability": "उपलब्धता जांचें",
+  "Hide Map": "मानचित्र छिपाएं",
+  "Show Map": "मानचित्र दिखाएं",
+  "Available Labours": "उपलब्ध श्रमिक",
+  "Search Radius": "खोज त्रिज्या",
+  "Nearby Labours": "निकटवर्ती श्रमिक",
+  "And": "और",
+  "more labours available": "अधिक श्रमिक उपलब्ध हैं",
+  "Cancel": "रद्द करें",
+  "Create Job": "नौकरी बनाएं",
+  "Creating Job...": "नौकरी बनाई जा रही है...",
+  "Get route": "मार्ग प्राप्त करें",
+  "Optimal route": "इष्टतम मार्ग",
+  "Computing optimal route...": "इष्टतम मार्ग गणना हो रहा है...",
+  "Dijkstra's algorithm": "डिज्क्स्ट्रा एल्गोरिथम",
+  "Spatial Landmark Model": "स्थानिक लैंडमार्क मॉडल",
+
+
+  "Farm Equipment Marketplace": "कृषि उपकरण बाजार",
+  "Find quality farming equipment and supplies": "गुणवत्तापूर्ण कृषि उपकरण और सामग्री खोजें",
+  "Search": "खोजें",
+  "Price Range": "मूल्य सीमा",
+  "All Categories": "सभी श्रेणियाँ",
+  "No equipment found": "कोई उपकरण नहीं मिला",
+  "Try adjusting your search": "अपनी खोज या फ़िल्टर बदलकर पुनः प्रयास करें।",
+  "List Equipment": "उपकरण जोड़ें",
+  "List New Equipment": "नया उपकरण सूचीबद्ध करें",
+  "Title": "शीर्षक",
+  "Price": "मूल्य",
+  "Condition": "स्थिति",
+  "Location": "स्थान",
+  "Equipment Image": "उपकरण की छवि",
+  "Choose File": "फ़ाइल चुनें",
+  "No file chosen": "कोई फ़ाइल नहीं चुनी गई",
+  "Compare": "तुलना करें"
+
+
+
+
+}
+
+
+  
+

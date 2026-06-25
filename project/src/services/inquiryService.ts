@@ -62,12 +62,17 @@ export async function getMyInquiries() {
   const access = tokens?.access;
   if (!access) throw new Error('Not authenticated');
 
-  const response = await fetch('http://localhost:8000/api/inquiries/mine/', {
-    headers: {
-      'Authorization': `Bearer ${access}`,
-    },
-  });
+  // const response = await fetch('http://localhost:8000/api/inquiries/mine/', {
+  //   headers: {
+  //     'Authorization': `Bearer ${access}`,
+  //   },
+  // });
 
+  const response = await fetch(`${import.meta.env.VITE_API_URL}/inquiries/mine/`, {
+  headers: {
+    Authorization: `Bearer ${access}`,
+  },
+});
   if (!response.ok) {
     const error = await response.json().catch(() => ({}));
     throw new Error(error?.detail || 'Failed to load inquiries');

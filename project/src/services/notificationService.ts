@@ -5,9 +5,17 @@ export async function fetchNotifications() {
   const access = tokens?.access;
   if (!access) throw new Error('Not authenticated');
 
-  const res = await fetch('http://localhost:8000/api/notifications/', {
-    headers: { 'Authorization': `Bearer ${access}` },
-  });
+  // const res = await fetch('http://localhost:8000/api/notifications/', {
+  //   headers: { 'Authorization': `Bearer ${access}` },
+  // });
+
+  const res = await fetch(`${import.meta.env.VITE_API_URL}/notifications/`, {
+  headers: {
+    Authorization: `Bearer ${access}`,
+  },
+});
+
+
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
     throw new Error(err?.detail || 'Failed to load notifications');
@@ -22,10 +30,16 @@ export async function markAllNotificationsRead() {
   const access = tokens?.access;
   if (!access) throw new Error('Not authenticated');
 
-  const res = await fetch('http://localhost:8000/api/notifications/mark_all_read/', {
-    method: 'POST',
-    headers: { 'Authorization': `Bearer ${access}` },
-  });
+  // const res = await fetch('http://localhost:8000/api/notifications/mark_all_read/', {
+  //   method: 'POST',
+  //   headers: { 'Authorization': `Bearer ${access}` },
+  // });
+  const res = await fetch(`${import.meta.env.VITE_API_URL}/notifications/mark_all_read/`, {
+  method: 'POST',
+  headers: {
+    Authorization: `Bearer ${access}`,
+  },
+});
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
     throw new Error(err?.detail || 'Failed to mark notifications read');

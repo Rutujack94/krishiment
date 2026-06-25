@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { API } from "./api";
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 
@@ -20,7 +21,7 @@ export interface Equipment {
 
 export const getEquipmentListings = async (): Promise<Equipment[]> => {
   try {
-    const response = await axios.get(`${API_URL}/equipment`);
+  const response = await API.get("/equipment/");
     return response.data;
   } catch (error) {
     console.error('Error fetching equipment listings:', error);
@@ -42,7 +43,7 @@ export const createEquipmentListing = async (equipment: Omit<Equipment, 'id' | '
       },
     };
 
-    const response = await axios.post(`${API_URL}/equipment`, newListing);
+   const response = await API.post("/equipment/", newListing);
     return response.data;
   } catch (error) {
     console.error('Error creating equipment listing:', error);

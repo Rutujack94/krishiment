@@ -2,12 +2,12 @@
 import React from "react";
 import { Routes, Route, Navigate, Outlet } from "react-router-dom";
 import { AuthProvider, useAuth } from "../contexts/AuthContext";
-import ProtectedRoute from "../components/Auth/ProtectedRoute";
+import ProtectedRoute from "../components/auth/ProtectedRoute";
 import MainLayout from "../components/Layout/MainLayout";
 
 // Pages
 import LandingPage from "../pages/LandingPage";
-import RoleSelection from "../components/Auth/RoleSelection";
+import RoleSelection from "../components/auth/RoleSelection";
 import FarmerDashboard from "../pages/FarmerDashboard";
 import LabourDashboard from "../pages/LabourDashboard";
 import GovernmentSchemes from "../components/Common/GovernmentSchemes.tsx";

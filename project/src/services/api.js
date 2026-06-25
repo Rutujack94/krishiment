@@ -86,4 +86,32 @@ export const getMyJobApplications = () =>
 export const updateJobApplication = (id, data) =>
   API.put(`/job-applications/${id}/`, data);
 
+
+export const todosApi = {
+  getAll: async () => {
+    const response = await API.get("/todos/");
+    return response.data;
+  },
+
+  getById: async (id) => {
+    const response = await API.get(`/todos/${id}/`);
+    return response.data;
+  },
+
+  create: async (data) => {
+    const response = await API.post("/todos/", data);
+    return response.data;
+  },
+
+  update: async (id, data) => {
+    const response = await API.put(`/todos/${id}/`, data);
+    return response.data;
+  },
+
+  remove: async (id) => {
+    const response = await API.delete(`/todos/${id}/`);
+    return response.data;
+  },
+};
+
 export default API;

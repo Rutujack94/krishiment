@@ -415,12 +415,19 @@ export function ProductForm({ open, onOpenChange, onProductAdded }: ProductFormP
       });
       if (images.length > 0) formDataToSend.append('image', images[0]);
 
-      const response = await fetch('http://localhost:8000/api/equipment/', {
-        method: 'POST',
-        headers: { Authorization: `Bearer ${accessToken}` },
-        body: formDataToSend,
-      });
+      // const response = await fetch('http://localhost:8000/api/equipment/', {
+      //   method: 'POST',
+      //   headers: { Authorization: `Bearer ${accessToken}` },
+      //   body: formDataToSend,
+      // });
 
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/equipment/`, {
+  method: 'POST',
+  headers: {
+    Authorization: `Bearer ${accessToken}`,
+  },
+  body: formDataToSend,
+});
       if (!response.ok) throw new Error('Failed to create listing');
 
       onOpenChange(false);

@@ -17,7 +17,8 @@ export const AuthProvider = ({ children }) => {
   const [tokens, setTokens] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const API_BASE_URL = 'http://localhost:8000';
+  // const API_BASE_URL = 'http://localhost:8000';
+   const API_BASE_URL = import.meta.env.VITE_API_URL;
 
   // Initialize auth state from localStorage on mount
   useEffect(() => {
@@ -106,12 +107,17 @@ export const AuthProvider = ({ children }) => {
       console.error('Login error:', error);
       
       // Provide more specific error messages
-      if (error.message === 'Failed to fetch' || error.name === 'TypeError') {
-        return { 
-          error: 'Cannot connect to server. Please make sure the backend server is running on http://localhost:8000' 
-        };
-      }
+      // if (error.message === 'Failed to fetch' || error.name === 'TypeError') {
+      //   return { 
+      //     error: 'Cannot connect to server. Please make sure the backend server is running on http://localhost:8000' 
+      //   };
+      // }
       
+      if (error.message === 'Failed to fetch' || error.name === 'TypeError') {
+  return {
+    error: 'Cannot connect to the server. Please check your internet connection or the backend API.'
+  };
+}
       return { error: error.message || 'An error occurred during login. Please try again.' };
     }
   };

@@ -38,12 +38,22 @@ export interface BuyEquipmentPayload {
   message: string;
 }
 
+// export async function buyEquipment(payload: BuyEquipmentPayload) {
+//   const response = await fetch('http://localhost:8000/api/buy-equipment/', {
+//     method: 'POST',
+//     headers: { 'Content-Type': 'application/json' },
+//     body: JSON.stringify(payload),
+//   });
+
+const API_URL = import.meta.env.VITE_API_URL;
+
 export async function buyEquipment(payload: BuyEquipmentPayload) {
-  const response = await fetch('http://localhost:8000/api/buy-equipment/', {
+  const response = await fetch(`${API_URL}buy-equipment/`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(payload),
   });
+}
 
   if (!response.ok) {
     const error = await response.json().catch(() => ({}));

@@ -1,4 +1,7 @@
+
+
 import React, { createContext, useState, useEffect, useContext } from "react";
+import API from "../api/api";
 import { USER_ROLES } from "../utils/constants";
 
 const AuthContext = createContext();
@@ -18,7 +21,7 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   // const API_BASE_URL = 'http://localhost:8000';
-   const API_BASE_URL = import.meta.env.VITE_API_URL;
+   
 
   // Initialize auth state from localStorage on mount
   useEffect(() => {
@@ -53,112 +56,94 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const login = async (username, password) => {
-    try {
-      const res = await fetch(`${API_BASE_URL}/api/auth/login/`, {
-        method: "POST",
-        headers: { 
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
-        body: JSON.stringify({ username, password }),
-      });
-      
-      if (!res.ok) {
-        let errorData;
-        try {
-          errorData = await res.json();
-        } catch (e) {
-          errorData = { error: `Server error: ${res.status} ${res.statusText}` };
-        }
-        console.error('Login failed:', errorData);
-        localStorage.removeItem("user");
-        localStorage.removeItem("tokens");
-        setUser(null);
-        setTokens(null);
-        return { error: errorData.error || errorData.detail || 'Login failed. Please check your credentials.' };
-      }
-      
-      const data = await res.json();
-      
-      if (!data.user) {
-        console.error('Invalid login response:', data);
-        return { error: 'Invalid server response. Please try again.' };
-      }
-      
-      const tokens = {
-        access: data.access,
-        refresh: data.refresh
+  try {
+    const { data } = await API.post("/auth/login/", {
+      username,
+      password,
+    });
+
+    if (!data.user) {
+      return {
+        error: "Invalid server response.",
       };
-      
-      if (!data.user.role || !Object.values(USER_ROLES).includes(data.user.role)) {
-        console.error('Invalid or missing user role in login response:', data.user.role);
-        return { 
-          error: 'Your account is not properly configured. Please contact support.' 
-        };
-      }
-      
-      setUser(data.user);
-      setTokens(tokens);
-      localStorage.setItem("user", JSON.stringify(data.user));
-      localStorage.setItem("tokens", JSON.stringify(tokens));
-      
-      return { user: data.user };
-    } catch (error) {
-      console.error('Login error:', error);
-      
-      // Provide more specific error messages
-      // if (error.message === 'Failed to fetch' || error.name === 'TypeError') {
-      //   return { 
-      //     error: 'Cannot connect to server. Please make sure the backend server is running on http://localhost:8000' 
-      //   };
-      // }
-      
-      if (error.message === 'Failed to fetch' || error.name === 'TypeError') {
-  return {
-    error: 'Cannot connect to the server. Please check your internet connection or the backend API.'
-  };
-}
-      return { error: error.message || 'An error occurred during login. Please try again.' };
     }
-  };
+
+    if (
+      !data.user.role ||
+      !Object.values(USER_ROLES).includes(data.user.role)
+    ) {
+      return {
+        error: "Invalid user role.",
+      };
+    }
+
+    const authTokens = {
+      access: data.access,
+      refresh: data.refresh,
+    };
+
+    setUser(data.user);
+    setTokens(authTokens);
+
+    localStorage.setItem("user", JSON.stringify(data.user));
+    localStorage.setItem("tokens", JSON.stringify(authTokens));
+
+    return {
+      user: data.user,
+    };
+  } catch (error) {
+    console.error(error);
+
+    localStorage.removeItem("user");
+    localStorage.removeItem("tokens");
+    setUser(null);
+    setTokens(null);
+
+    return {
+      error:
+        error.response?.data?.detail ||
+        error.response?.data?.error ||
+        "Login failed",
+    };
+  }
+};
+
+
+
 
   const register = async (userData) => {
-    try {
-      const res = await fetch(`${API_BASE_URL}/api/auth/register/`, {
-        method: "POST",
-        headers: { 
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
-        body: JSON.stringify(userData),
-      });
-      
-      const data = await res.json();
-      
-      if (!res.ok) {
-        console.error('Registration failed:', data);
-        return { 
-          error: data.error || 'Registration failed. Please try again.',
-          details: data
-        };
-      }
-      
-      const tokens = {
-        access: data.access,
-        refresh: data.refresh
-      };
-      
-      setUser(data.user);
-      setTokens(tokens);
-      localStorage.setItem("user", JSON.stringify(data.user));
-      localStorage.setItem("tokens", JSON.stringify(tokens));
-      
-      return { user: data.user };
-    } catch (error) {
-      console.error('Registration error:', error);
-      return { error: 'An error occurred during registration. Please try again.' };
-    }
-  };
+  try {
+    const { data } = await API.post("/auth/register/", userData);
+
+    const authTokens = {
+      access: data.access,
+      refresh: data.refresh,
+    };
+
+    setUser(data.user);
+    setTokens(authTokens);
+
+    localStorage.setItem("user", JSON.stringify(data.user));
+    localStorage.setItem("tokens", JSON.stringify(authTokens));
+
+    return {
+      user: data.user,
+    };
+  } catch (error) {
+    console.error(error);
+
+    return {
+      error:
+        error.response?.data?.detail ||
+        error.response?.data?.error ||
+        "Registration failed",
+    };
+  }
+};
+
+
+
+
 
   const logout = () => {
     setUser(null);

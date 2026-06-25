@@ -32,13 +32,5 @@ git clone https://github.com/Sushant2397/PRIZMA.git
 <img width="1366" height="630" alt="image" src="https://github.com/user-attachments/assets/a6bdf3b5-4c42-4832-912a-f1ad1f6b82e2" />
 
 
-## 👨‍💻 Developers:
-Sushant Kanchalwad
-
-Rutuja Khande
-
-Lalit Patil
-
-Kunal Pawar
 
 

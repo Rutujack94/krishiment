@@ -1,7 +1,7 @@
 
 
 import React, { createContext, useState, useEffect, useContext } from "react";
-import API from "../api/api";
+import API from "../services/api";
 import { USER_ROLES } from "../utils/constants";
 
 const AuthContext = createContext();
